@@ -25,7 +25,7 @@ export default function FAQAccordion() {
               >
                 <span className="font-medium text-ink">{faq.question}</span>
                 <span
-                  className={`shrink-0 text-xl text-terracotta transition-transform ${isOpen ? "rotate-45" : ""}`}
+                  className={`shrink-0 text-xl text-gold transition-transform ${isOpen ? "rotate-45" : ""}`}
                 >
                   +
                 </span>

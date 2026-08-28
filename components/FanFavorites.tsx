@@ -5,9 +5,11 @@ const imageMap: Record<string, string> = {
   "Pad Thai": "/images/hero-pad-thai.jpg",
   "Pad See Ew": "/images/pad-see-ew.jpg",
   "Crying Tiger": "/images/crying-tiger.jpg",
-  "Tom Yum Noodle Soup": "/images/tom-yum-noodle-soup.jpg",
-  "Papaya Salad": "/images/papaya-salad.jpg",
-  "Khao Soi": "/images/khao-soi.jpg",
+  "Beef Stew": "/images/real-beef-stew.jpg",
+  "Papaya Salad": "/images/real-papaya-salad.jpg",
+  "Orange Chicken": "/images/real-orange-chicken.jpg",
+  "Yum Woon Sen": "/images/real-yum-woon-sen.jpg",
+  "Nam Khao Tod": "/images/real-larb.jpg",
 };
 
 const tagClass: Record<string, string> = {
@@ -30,7 +32,7 @@ export default function FanFavorites() {
         </p>
       </div>
 
-      <div className="section grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="section grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {fanFavorites.map((dish) => (
           <div
             key={dish.name}

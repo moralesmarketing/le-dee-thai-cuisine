@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { business } from "@/lib/site-data";
 
 const links = [
@@ -10,15 +11,17 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--surface-line)] bg-surface/90 backdrop-blur">
-      <div className="section flex items-center justify-between py-5">
-        <Link href="/" className="leading-tight">
-          <span className="block font-[family-name:var(--font-display)] text-2xl font-semibold tracking-wide text-ink">
-            Le DEE
-          </span>
-          <span className="block text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-terracotta">
-            Thai Cuisine
-          </span>
+    <header className="sticky top-0 z-50 border-b border-[var(--surface-line)] bg-surface/95 backdrop-blur">
+      <div className="section flex items-center justify-between py-3">
+        <Link href="/" className="flex shrink-0 items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Le DEE Thai Cuisine"
+            width={732}
+            height={732}
+            priority
+            className="h-20 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -26,7 +29,7 @@ export default function Header() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-xs font-medium uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-green"
+              className="text-xs font-medium uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-gold"
             >
               {l.label}
             </Link>

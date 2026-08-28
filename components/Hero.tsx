@@ -17,8 +17,8 @@ export default function Hero() {
 
       <div className="section relative z-10 py-24">
         <div className="max-w-xl">
-          <span className="eyebrow text-[#e7b892]">Chino Hills, CA</span>
-          <h1 className="mt-4 text-5xl leading-[1.05] font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <span className="eyebrow text-[#d9b46a]">Best Thai Food in Chino Hills, CA</span>
+          <h1 className="mt-4 text-5xl leading-[1.05] font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Thai Cuisine,
             <br />
             Served With Heart.

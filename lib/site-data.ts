@@ -259,8 +259,9 @@ export const fanFavorites: FanFavorite[] = [
     tag: "Signature",
   },
   {
-    name: "Tom Yum Noodle Soup",
-    description: "A generous bowl of hot-and-sour noodle soup loaded with fish cake, shrimp, and fried wonton.",
+    name: "Beef Stew",
+    price: "$25.00",
+    description: "Tender beef in a rich, spiced broth, simmered low and slow and finished with fresh celery.",
     tag: "Fan Favorite",
   },
   {
@@ -269,8 +270,18 @@ export const fanFavorites: FanFavorite[] = [
     tag: "Fan Favorite",
   },
   {
-    name: "Khao Soi",
-    description: "Northern Thai curry noodle soup, topped with crispy egg noodles and pickled mustard greens.",
+    name: "Orange Chicken",
+    description: "Crispy fried chicken bites glazed in a sweet-tangy orange sauce, finished with sesame seeds.",
+    tag: "Fan Favorite",
+  },
+  {
+    name: "Yum Woon Sen",
+    description: "Glass noodle salad with shrimp, ground pork, tomato, and herbs in a bright lime dressing.",
+    tag: "Fan Favorite",
+  },
+  {
+    name: "Nam Khao Tod",
+    description: "Crispy fried rice tossed with sour fermented pork, peanuts, chili, and fresh herbs — an Isaan classic.",
     tag: "Fan Favorite",
   },
 ];

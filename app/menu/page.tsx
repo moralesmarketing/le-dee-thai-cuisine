@@ -22,7 +22,7 @@ export default function MenuPage() {
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="shrink-0 rounded-full border border-[var(--surface-line)] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.08em] text-ink-soft transition-colors hover:border-green hover:text-ink"
+              className="shrink-0 rounded-full border border-[var(--surface-line)] px-4 py-1.5 text-xs font-medium uppercase tracking-[0.08em] text-ink-soft transition-colors hover:border-gold hover:text-ink"
             >
               {cat.title}
             </a>
@@ -40,7 +40,7 @@ export default function MenuPage() {
             href={business.grubhubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-green hover:text-ink"
+            className="font-semibold text-gold hover:text-ink"
           >
             Grubhub
           </a>

@@ -29,7 +29,7 @@ export default function LocationSection() {
               <br />
               {business.address.line2}
             </p>
-            <a href={business.phoneHref} className="block font-semibold text-ink hover:text-green">
+            <a href={business.phoneHref} className="block font-semibold text-ink hover:text-gold">
               {business.phone}
             </a>
             <p>Free parking, in the shopping center.</p>

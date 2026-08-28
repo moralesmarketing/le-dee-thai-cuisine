@@ -1,14 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 import { business } from "@/lib/site-data";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--surface-line)] bg-surface">
+    <footer className="border-t border-[var(--surface-line)] bg-surface-raised">
       <div className="section grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <span className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-wide text-ink">
-            Le DEE Thai Cuisine
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Le DEE Thai Cuisine"
+            width={732}
+            height={732}
+            className="h-20 w-auto"
+          />
           <p className="mt-4 max-w-xs text-sm text-ink-soft">
             &ldquo;ฤดี&rdquo; — the heart, the mind, the spirit. Thai food
             served with warmth, in Chino Hills.
@@ -22,7 +27,7 @@ export default function Footer() {
             <br />
             {business.address.line2}
           </p>
-          <a href={business.phoneHref} className="mt-2 block text-sm font-semibold text-ink hover:text-green">
+          <a href={business.phoneHref} className="mt-2 block text-sm font-semibold text-ink hover:text-gold">
             {business.phone}
           </a>
           <a

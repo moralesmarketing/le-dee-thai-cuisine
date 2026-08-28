@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --surface: #faf6ee;
-  --surface-raised: #f2ebdb;
-  --surface-line: rgba(31, 74, 60, 0.14);
+  --surface: #ffffff;
+  --surface-raised: #f2f1ee;
+  --surface-line: rgba(13, 13, 13, 0.1);
 
-  --ink: #23261f;
-  --ink-soft: #5c6156;
-  --ink-faint: #8a8f81;
+  --ink: #0d0d0d;
+  --ink-soft: #4d4d4d;
+  --ink-faint: #8a8a8a;
 
+  --gold: #946a33;
+  --gold-soft: rgba(148, 106, 51, 0.12);
   --green: #1f4a3c;
   --green-soft: rgba(31, 74, 60, 0.1);
-  --terracotta: #c1663f;
-  --terracotta-soft: rgba(193, 102, 63, 0.13);
-  --gold: #b98a30;
-  --gold-soft: rgba(185, 138, 48, 0.14);
+  --terracotta: #a8452c;
+  --terracotta-soft: rgba(168, 69, 44, 0.12);
 }
 
 @theme inline {
@@ -48,49 +48,48 @@ html {
 
   h1, h2, h3, h4 {
     font-family: var(--font-display), ui-serif, Georgia, serif;
-    font-weight: 600;
+    font-weight: 700;
     text-wrap: balance;
   }
 }
 
 ::selection {
-  background: var(--green);
-  color: var(--surface);
+  background: var(--gold);
+  color: white;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
-  border-radius: 2px;
-  padding: 0.9em 1.8em;
+  border-radius: 1px;
+  padding: 0.9em 1.9em;
   font-weight: 600;
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
   transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   white-space: nowrap;
 }
 .btn:active { transform: scale(0.97); }
 
 .btn-primary {
-  background: var(--green);
-  color: var(--surface);
+  background: var(--gold);
+  color: white;
 }
-.btn-primary:hover { background: #163a2e; }
+.btn-primary:hover { background: #7a5628; }
 
 .btn-ghost {
   background: transparent;
   color: var(--ink);
   border: 1px solid var(--surface-line);
 }
-.btn-ghost:hover { border-color: var(--green); color: var(--green); }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
 
 .eyebrow {
   font-family: var(--font-body), sans-serif;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--gold);
   font-size: 0.75rem;
   font-weight: 600;
 }

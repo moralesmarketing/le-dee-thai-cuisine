@@ -15,9 +15,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/45 to-surface" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/55 to-transparent" />
 
-      <div className="section relative z-10 py-24">
+      <div className="relative z-10 mx-auto w-full max-w-[1120px] px-4 py-24 sm:px-6 md:px-10">
         <div className="max-w-xl">
-          <span className="eyebrow text-[#d9b46a]">Best Thai Food in Chino Hills, CA</span>
+          <span className="eyebrow !text-white">Best Thai Food in Chino Hills, CA</span>
           <h1 className="mt-4 text-5xl leading-[1.05] font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Thai Cuisine,
             <br />
